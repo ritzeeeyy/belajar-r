@@ -1,5 +1,6 @@
 # Introduction to R
 
+(edit dikit)
 - R
   - Cara akses R
     1. CMD
