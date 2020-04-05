@@ -44,7 +44,7 @@
      if ( <<conditional>> ) {
          C  <-  <<boolean>>
      } else {
-         c  <-  <<boolean>>
+         C  <-  <<boolean>>
      }
      ```
 
