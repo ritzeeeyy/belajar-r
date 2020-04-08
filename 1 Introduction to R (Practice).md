@@ -6,25 +6,67 @@
     install.packages("tidyverse")
     library(tidyverse)
     ```
+Jawab:
+
+Menurutku, karna packages yang belum ter-*install* ibarat buku-buku diluar library (perpustakaan) yang belum teridentifikasi. Jadi untuk memasukkan ke library kita harus tau "judul" dari "buku" tsb.[^1] 
+
+Dlm kasus ini berarti untuk meng-*install* packages , kita meng-*input* nama packages dengan parameter string agar dapat dibaca oleh R bahwa package yg kita ingin *install* bernama tidyverse.
+
+Setelah packages ter-*install* maka untuk menggunakan packages kita dapat menggunakan code `library()` dengan meng-*input* nama packages yg diinginkan. Penulisan nama package pada code `library()` baik menggunakan tanda petik dua maupun tidak akan tetap terbaca oleh R, karena packages sudah "teridentifikasi" oleh R bahwa "tidyverse" adalah "buku" yg ingin kita "baca" dari "library".
+
+Jadi, code `library(tidyverse)` or `library("tidyverse")` sama saja dan tetap dikenali sistem sbg perintah menggunakan packages tidyverse. Karena sama saja mungkin lebih efisien jika tidak menggunakan tanda petik dua. **(Menurutku yaak)** ***WKWKWKWK*** 
 
 2. Berikan contoh skenario pemanfaatan/pengelolaan *working directory* pada R? (Jawaban bersifat terbuka, lakukan analisis bebas!)
 
 3. Uraikan permasalahan berikut ini
-   - ( TRUE & TRUE ) | FALSE
-   - ( TRUE | ( FALSE & FALSE ) ) & FALSE
-   - FALSE | TRUE & FALSE
-   - FALSE & TRUE | FALSE
-   - ( FALSE & TRUE) | ( FALSE & FALSE)
+    - ( TRUE & TRUE ) | FALSE
+
+    ->TRUE | FALSE
+    
+    ->TRUE
+    
+    - ( TRUE | ( FALSE & FALSE ) ) & FALSE
+    
+    ->(TRUE | FALSE) & FALSE
+    
+    ->TRUE & FALSE
+    
+    ->FALSE
+    
+    - FALSE | TRUE & FALSE
+
+    ->TRUE & FALSE
+    
+    ->FALSE
+    
+    - FALSE & TRUE | FALSE
+  
+    ->FALSE | FALSE
+  
+    ->FALSE
+
+    - ( FALSE & TRUE) | ( FALSE & FALSE)
+  
+    ->FALSE | FALSE
+  
+    ->FALSE
 
 4. Coba jalankan code di bawah ini
    - NULL == NA
+    ->logical (0)
    - NA == NaN
+    ->NA
    - "1" == 1
+    ->TRUE
    - ( pi < exp(1) ) | FALSE
+    ->FALSE
 
 5. Jika `sin(x)` adalah 1, maka berapakah `x`? (coba jalankan fungsi sin, cos, dan tan pada r)
 
 6. Bagaimana cara menghapus sebuah variabel dari *global environment*?
+
+   Jawab:
+   Dengan menggunakan `rm(list=ls())`
 
 7. Jelaskan beberapa fungsi matematika berikut!
    - `abs(x)`
@@ -56,4 +98,8 @@
    - Berapakah nilai `A`, `B`, dan `C`?
 
 
+
+Referensi:
+
+[^1]: *R Packages: A Beginner's Guide, 2019, Adolfo Alvarez,* (https://www.datacamp.com/community/tutorials/r-packages-guide#packagelib)
 
