@@ -63,6 +63,12 @@ Jadi, code `library(tidyverse)` or `library("tidyverse")` sama saja dan tetap di
 
 5. Jika `sin(x)` adalah 1, maka berapakah `x`? (coba jalankan fungsi sin, cos, dan tan pada r)
 
+   Jawab:
+
+   ->asin(1) = 1.570796 atau pi/2
+
+   Karena pada Rstudio operasi trigonometri menggunakan nilai radian bukan sudut. [^2]
+
 6. Bagaimana cara menghapus sebuah variabel dari *global environment*?
 
    Jawab:
@@ -97,9 +103,28 @@ Jadi, code `library(tidyverse)` or `library("tidyverse")` sama saja dan tetap di
 
    - Berapakah nilai `A`, `B`, dan `C`?
 
+   Jawab:
+   Nilai A, B, dan C adalah 30301, 1096.63316,`TRUE`.
+
+   Diperoleh dari syntax berikut:
+     ```R
+     B <- exp(7)
+     A <- (134789 %% 253) * (ceiling(B/7))
+     
+    #Cara 1
+     if (A %% 2 = 0) {
+         C <- FALSE
+     } else {
+         C <- TRUE
+     }
+     
+     #Cara 2
+     ```
+
 
 
 Referensi:
 
 [^1]: *R Packages: A Beginner's Guide, 2019, Adolfo Alvarez,* (https://www.datacamp.com/community/tutorials/r-packages-guide#packagelib)
 
+[^2]: *R Trigonometric Function*, (http://www.endmemo.com/program/R/trig.php)
