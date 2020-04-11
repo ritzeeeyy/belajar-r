@@ -18,108 +18,118 @@ Jadi, code `library(tidyverse)` or `library("tidyverse")` sama saja dan tetap di
 
 2. Berikan contoh skenario pemanfaatan/pengelolaan *working directory* pada R? (Jawaban bersifat terbuka, lakukan analisis bebas!)
 
+    Terdapat dua perintah yang dapat digunakan untuk mengelola *working directory* pada R, yaitu **`getwd()`** dan **`setwd()`**. 
+    Usahakan selalu menggunakan **`getwd()`** ketika memulai sebuah project. Hal ini dilakukan untuk mendapatkan/memastikan *working directory* project yang sedang kita kerjakan. Ketika *working directory* tersebut tidak sesuai dengan yang kita inginkan, lakukan pengubahan *working directory* dengan melakukan perintah **`setwd()`**.
+
+    Gunakan kedua perintah tersebut untuk mengelola *working directory* pada setiap project yang dikerjakan. Hal ini dilakukan untuk menghindari penempatan *file* yang *semrawut*. Ketika kita salah melakukan pengelolaan *working directory*, dijamin kita akan kebingungan untuk menemukan *file-file* yang digunakan dalam project kita.
+
 3. Uraikan permasalahan berikut ini
-    - ( TRUE & TRUE ) | FALSE
 
-    ->TRUE | FALSE
-    
-    ->TRUE
-    
-    - ( TRUE | ( FALSE & FALSE ) ) & FALSE
-    
-    ->(TRUE | FALSE) & FALSE
-    
-    ->TRUE & FALSE
-    
-    ->FALSE
-    
-    - FALSE | TRUE & FALSE
+- ( TRUE & TRUE ) | FALSE
 
-    ->TRUE & FALSE
-    
-    ->FALSE
-    
-    - FALSE & TRUE | FALSE
-  
-    ->FALSE | FALSE
-  
-    ->FALSE
+->TRUE | FALSE
 
-    - ( FALSE & TRUE) | ( FALSE & FALSE)
+->TRUE
+
+- ( TRUE | ( FALSE & FALSE ) ) & FALSE
+
+->(TRUE | FALSE) & FALSE
+
+->TRUE & FALSE
+
+->FALSE
+
+- FALSE | TRUE & FALSE
+
+->TRUE & FALSE
+
+->FALSE
+
+- FALSE & TRUE | FALSE
   
-    ->FALSE | FALSE
+
+->FALSE | FALSE
+
+->FALSE
+
+- ( FALSE & TRUE) | ( FALSE & FALSE)
   
-    ->FALSE
+
+->FALSE | FALSE
+
+->FALSE
 
 4. Coba jalankan code di bawah ini
-   - NULL == NA
-    ->logical (0)
-   - NA == NaN
-    ->NA
-   - "1" == 1
-    ->TRUE
-   - ( pi < exp(1) ) | FALSE
-    ->FALSE
+
+- NULL == NA
+ ->logical (0)
+- NA == NaN
+ ->NA
+- "1" == 1
+ ->TRUE
+- ( pi < exp(1) ) | FALSE
+ ->FALSE
 
 5. Jika `sin(x)` adalah 1, maka berapakah `x`? (coba jalankan fungsi sin, cos, dan tan pada r)
 
-   Jawab:
+Jawab:
 
-   ->asin(1) = 1.570796 atau pi/2
+->asin(1) = 1.570796 atau pi/2
 
-   Karena pada Rstudio operasi trigonometri menggunakan nilai radian bukan sudut. [^2]
+Karena pada Rstudio operasi trigonometri menggunakan nilai radian bukan sudut. [^2]
 
 6. Bagaimana cara menghapus sebuah variabel dari *global environment*?
 
-   Jawab:
-   Dengan menggunakan `rm(list=ls())`
+Jawab:
+Dengan menggunakan `rm(list=ls())`
 
 7. Jelaskan beberapa fungsi matematika berikut!
-   - `abs(x)`
-   - `log(x, base = y)`
-   - `exp(x)`
-   - `sqrt(x)`
-   - `factorial(x)`
+
+- `abs(x)`
+- `log(x, base = y)`
+- `exp(x)`
+- `sqrt(x)`
+- `factorial(x)`
 
 8. Buatlah kode berdasarkan petunjuk berikut!
 
-   - Sebuah bilangan `A` adalah hasil sisa pembagian 134789 dengan 253 dikali dengan hasil 'pembulatan ke atas' dari pembagian B dengan 7, di mana `B` adalah bilangan euler yang dipangkatkan 7.
+- Sebuah bilangan `A` adalah hasil sisa pembagian 134789 dengan 253 dikali dengan hasil 'pembulatan ke atas' dari pembagian B dengan 7, di mana `B` adalah bilangan euler yang dipangkatkan 7.
 
-   - `C` adalah sebuah variabel berjenis boolean yang bernilai `TRUE` apabila `A` adalah bilangan ganjil dan `FALSE` apabila bernilai genap. Lengkapilah kode berikut ini
+- `C` adalah sebuah variabel berjenis boolean yang bernilai `TRUE` apabila `A` adalah bilangan ganjil dan `FALSE` apabila bernilai genap. Lengkapilah kode berikut ini
 
-     ```R
-     # Cara 1
-     if ( <<conditional>> ) {
-         C  <-  <<boolean>>
-     } else {
-         C  <-  <<boolean>>
-     }
-     ```
+  ```R
+  # Cara 1
+  if ( <<conditional>> ) {
+      C  <-  <<boolean>>
+  } else {
+      C  <-  <<boolean>>
+  }
+  ```
 
-     ```R
-     # Cara 2
-     C  <-  <<conditional>>
-     ```
+  ```R
+  # Cara 2
+  C  <-  <<conditional>>
+  ```
 
-   - Berapakah nilai `A`, `B`, dan `C`?
+- Berapakah nilai `A`, `B`, dan `C`?
 
-   Jawab:
-   Nilai A, B, dan C adalah 30301, 1096.63316,`TRUE`.
+Jawab:
+Nilai A, B, dan C adalah 30301, 1096.63316,`TRUE`.
 
-   Diperoleh dari syntax berikut:
-     ```R
-     B <- exp(7)
-     A <- (134789 %% 253) * (ceiling(B/7))
-     
-    #Cara 1
-     if (A %% 2 = 0) {
-         C <- FALSE
-     } else {
-         C <- TRUE
-     }
-     
-     #Cara 2
-     ```
+Diperoleh dari syntax berikut:
+```R
+  B <- exp(7)
+  A <- (134789 %% 253) * (ceiling(B/7))
+  
+ #Cara 1
+  if (A %% 2 = 0) {
+      C <- FALSE
+  } else {
+      C <- TRUE
+  }
+  
+  #Cara 2
+```
 
 
 
