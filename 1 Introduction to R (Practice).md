@@ -86,10 +86,24 @@ Dengan menggunakan `rm(list=ls())`
 7. Jelaskan beberapa fungsi matematika berikut!
 
 - `abs(x)`
+
+  menghitung nilai absolut dari (x)
+
 - `log(x, base = y)`
+
+  manghitung logarithm untuk (x), dengan base y
+
 - `exp(x)`
+
+  menghitung nilai eksponensial untuk (x)
+
 - `sqrt(x)`
+
+  menghitung akar kuadrat dari (x)
+
 - `factorial(x)`
+
+  menghitung faktorial dari (x)
 
 8. Buatlah kode berdasarkan petunjuk berikut!
 
